@@ -16,5 +16,10 @@ namespace SocketClientApp
         {
             InitializeComponent();
         }
+
+        private void ConnectClick(object sender, EventArgs e)
+        {
+            SynchronousSocketClient.StartClient(logTextBox);
+        }
     }
 }
